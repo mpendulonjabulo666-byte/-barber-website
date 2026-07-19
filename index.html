@@ -4,10 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Sovereign Grooming Lounge — Mobile Barber by Jack</title>
+.site-nav{display:flex;justify-content:center;flex-wrap:wrap;gap:20px;background:#0d0c0a;padding:14px 0;border-bottom:1px solid #4a3a1a;}
+.site-nav a{font-family:'Montserrat',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#c9a84c;text-decoration:none;}
+.site-nav a:hover{color:#f0d080;}
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap');
 *{margin:0;padding:0;box-sizing:border-box;}
-.poster{width:640px;margin:0 auto;background:#080808;border:1px solid #8a6f2e;position:relative;overflow:hidden;font-family:'Cormorant Garamond',serif;}
+.poster{width:100%;max-width:640px;margin:0 auto;background:#080808;border:1px solid #8a6f2e;position:relative;overflow:hidden;font-family:'Cormorant Garamond',serif;}
 .shimmer{position:absolute;top:-100%;left:-60%;width:35%;height:300%;background:linear-gradient(90deg,transparent,rgba(201,168,76,0.09),rgba(240,208,128,0.14),rgba(201,168,76,0.09),transparent);transform:skewX(-20deg);animation:shim 5s linear infinite;z-index:50;pointer-events:none;}
 @keyframes shim{0%{left:-60%}100%{left:130%}}
 .hdr{background:#0d0c0a;text-align:center;padding:28px 30px 22px;border-bottom:1px solid #4a3a1a;position:relative;z-index:1;}
@@ -64,8 +67,17 @@
 .tr{top:5px;right:5px;transform:scaleX(-1);}
 .bl{bottom:5px;left:5px;transform:scaleY(-1);}
 .br{bottom:5px;right:5px;transform:scale(-1);}
+.site-nav{display:flex;justify-content:center;flex-wrap:wrap;gap:20px;background:#0d0c0a;padding:14px 0;border-bottom:1px solid #4a3a1a;}
+.site-nav a{font-family:'Montserrat',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#c9a84c;text-decoration:none;}
+.site-nav a:hover{color:#f0d080;}
 </style>
 <body>
+  <nav class="site-nav">
+  <a href="index.html">Home</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="services.html">Services</a>
+  <a href="contact.html">Contact</a>
+</nav>
 <div class="poster">
   <div class="shimmer"></div>
   <div class="crnr tl"><svg viewBox="0 0 36 36" fill="none"><path d="M2 34L2 2L34 2" stroke="#c9a84c" stroke-width="1.2" stroke-opacity="0.55"/><circle cx="2" cy="2" r="2" fill="#c9a84c" fill-opacity="0.55"/></svg></div>
